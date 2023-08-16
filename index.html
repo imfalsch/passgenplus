@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #passwordDisplay {
+            font-weight: bold;
+        }
+        #strengthIndicator {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .weak {
+            color: red;
+        }
+        .medium {
+            color: orange;
+        }
+        .strong {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <p>Click the button below to generate a random password between 12 and 24 characters:</p>
+    <label for="charsetSelect">Select Character Set:</label>
+    <select id="charsetSelect">
+        <option value="alphanumeric">Alphanumeric</option>
+        <option value="alphanumericSpecial">Alphanumeric + Special Characters</option>
+    </select>
+    <button id="generateButton">Generate Password</button>
+    <!-- ... (diğer HTML kodları) ... -->
+
+<h2>Copy Notification</h2>
+<button id="copyPasswordButton">Copy Password to Clipboard</button>
+<p id="copyNotification" style="display: none; color: green;">Password copied to clipboard!</p>
+
+<!-- ... (diğer HTML kodları) ... -->
+
+    <p id="passwordDisplay"></p>
+    <p id="strengthIndicator"></p>
+    <script src="passgenjs.js"></script>
+</body>
+</html>
